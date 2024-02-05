@@ -113,7 +113,7 @@ span {
 
 .part5 {
   display: grid;
-  grid-template-colums: repeat(6, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   min-height: 100vh;
 }
 
@@ -152,8 +152,6 @@ span {
   grid-column: 3 / span 4;
 }
 
-/* demo*/
-
 * {
   margin: 0;
 }
@@ -167,26 +165,15 @@ div p::first-letter {
   font-weight: bold;
 }
 
-.h-express {
-  max-width: 100%;
-  float: center;
-  text-align: center;
-  font-style: italic;
-  font-size: smaller;
-  text-indent: 0;
-  margin: 0.5em;
-  padding: 0.5em;
+figure {
+  display: table;
+  float: left;
+  margin: 5px;
 }
 
-figure {
-  float: center;
-  width: 70%;
-  text-align: center;
-  font-style: italic;
-  font-size: smaller;
-  text-indent: 0;
-  margin: 0.5em;
-  padding: 0.5em;
+figcaption {
+  display: table-caption;
+  caption-side: bottom;
 }
 
 .item3 {
