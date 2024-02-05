@@ -61,6 +61,7 @@ header {
   border: 3px groove grey;
   border-right: none;
   border-left: none;
+  border-top: none;
   justify-content: space-between;
   align-items: center;
 }
@@ -94,6 +95,15 @@ span {
   font-size: 1.5rem;
 }
 
+#design {
+  font-size: 1.5rem;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+
+.title {
+  text-align: center;
+}
 /* Main */
 
 /* .newspaper {
