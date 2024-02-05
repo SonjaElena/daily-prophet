@@ -74,36 +74,35 @@ header {
 
 header p {
   margin-top: auto;
-  font-size: 0.7rem;
-}
-
-.title span {
-  font-family: "Almendra SC", serif;
-  font-weight: bold;
-  font-size: 5rem;
-}
-
-.title span::first-letter {
-  color: goldenrod;
-}
-
-span {
-  margin: 10px;
-}
-
-#fontchange {
-  font-size: 1.5rem;
-}
-
-#design {
-  font-size: 1.5rem;
-  border-bottom: 1px solid black;
-  border-top: 1px solid black;
+  font-size: 1rem;
 }
 
 .title {
   text-align: center;
 }
+
+.title span {
+  font-family: "Almendra SC", serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 10px;
+}
+
+#design {
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+
+.title p {
+  font-family: "Almendra SC", serif;
+  font-weight: bold;
+  font-size: 5rem;
+}
+
+.title p::first-letter {
+  color: goldenrod;
+}
+
 /* Main */
 
 /* .newspaper {
