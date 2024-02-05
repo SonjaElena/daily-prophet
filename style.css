@@ -17,6 +17,12 @@
   src: url("./fonts/almendra-sc-v29-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
 /* Global settings */
 *,
 *::after,
@@ -25,11 +31,7 @@
   font-family: "Dancing Script";
   padding: 10px;
 }
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
+
 body {
   margin: 0px;
   background-image: url(https://img.freepik.com/free-photo/vintage-grunge-paper-background_1048-10911.jpg);
@@ -71,13 +73,13 @@ header {
 
 header p {
   margin-top: auto;
-  font-size: 12px;
+  font-size: 0.7rem;
 }
 
 .title span {
   font-family: "Almendra SC", serif;
   font-weight: bold;
-  font-size: 64px;
+  font-size: 5rem;
 }
 
 .title span::first-letter {
@@ -86,6 +88,10 @@ header p {
 
 span {
   margin: 10px;
+}
+
+#fontchange {
+  font-size: 1.5rem;
 }
 
 /* Main */
