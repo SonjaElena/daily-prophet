@@ -169,7 +169,7 @@ div p::first-letter {
 figure {
   display: table;
   float: left;
-  margin: 5px;
+  margin: 8px;
 }
 
 figcaption {
@@ -197,16 +197,32 @@ figcaption {
 #mess h2 {
   writing-mode: vertical-lr;
   text-orientation: mixed;
-  order: 100;
+  order: 1;
 }
 
 blockquote {
   font-weight: 900;
-  font-size: larger;
+  font-size: 40px;
+  text-align: center;
 }
+
 blockquote::before {
-  content: open-quote;
+  border-top: 1px solid black;
+  content: "";
+  width: 100px;
+  height: 7px;
+  display: block;
+  margin: 0 auto;
 }
 blockquote::after {
-  content: close-quote;
+  border-bottom: 1px solid black;
+  content: "";
+  width: 100px;
+  height: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+#notbold::first-letter {
+  font-weight: normal;
 }
