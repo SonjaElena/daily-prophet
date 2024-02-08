@@ -105,8 +105,8 @@ header p {
 
 .wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
 }
 
 div {
@@ -144,10 +144,12 @@ figcaption {
 }
 
 .C {
+  display: flex;
+  flex-wrap: wrap;
   writing-mode: vertical-rl;
-  text-orientation: mixed;
-  white-space: pre;
-  height: max-content;
+  white-space: normal;
+  margin: 0 0;
+  max-height: 750px;
 }
 
 .author {
@@ -155,24 +157,34 @@ figcaption {
   width: fit-content;
 }
 
-#mess {
+.E {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
-#mess h2 {
+.E h2 {
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  order: 2;
+}
+
+.E .author {
   writing-mode: vertical-lr;
   text-orientation: mixed;
   order: 1;
 }
 
-#mess2 {
+.F p {
   display: block;
   writing-mode: vertical-rl;
-  text-orientation: mixed;
-  white-space: pre;
-  height: max-content;
-  margin-left: auto;
+  white-space: normal;
+  margin: 0 auto;
+  max-height: 470px;
+}
+
+.F h2 {
+  text-align: center;
 }
 
 blockquote {
@@ -200,4 +212,9 @@ blockquote::after {
 
 #notbold::first-letter {
   font-weight: normal;
+}
+
+.C img {
+  -webkit-transform: rotate(90deg);
+  position: ;
 }
