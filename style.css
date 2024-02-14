@@ -150,6 +150,10 @@ div p::first-letter {
   -webkit-transform: rotate(90deg);
 }
 
+.C figure {
+  text-align: center;
+}
+
 .C img {
   display: block;
   margin-left: auto;
